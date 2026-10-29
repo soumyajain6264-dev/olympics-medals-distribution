@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: olympic-tableau-portal
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: TABLEAU_DASHBOARD_URL
+        value: https://public.tableau.com/views/GlobalOlympicsAthlete1/Dashboard1?:showVizHome=no&:embed=yes&:tabs=yes&:toolbar=yes
+      # Add TABLEAU_STORY_URL in Render after you copy the published Story URL.
