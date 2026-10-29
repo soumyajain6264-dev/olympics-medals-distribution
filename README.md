@@ -14,7 +14,7 @@ source .venv/bin/activate   # macOS/Linux
 pip install -r requirements.txt
 python app.py
 ```
-Open http://127.0.0.1:5000
+Open https://olympics-medals-distribution-1.onrender.com
 
 ## Deploy on Render
 1. Upload these files to a GitHub repository.
